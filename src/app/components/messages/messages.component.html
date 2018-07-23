@@ -1,0 +1,9 @@
+<div class="container">
+  <div *ngFor="let msg of messageObject" class="card mb-4">
+    <div class="card-body">
+        <h4>{{msg.name}}</h4> 
+        <p><label>Email:</label><span>{{msg.email}}</span></p>
+        <p><label>Message:  </label><span>{{msg.message}}</span></p>        
+    </div>
+  </div>
+</div>
