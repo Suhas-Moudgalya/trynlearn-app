@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  messageCount: Number;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  updateMessageCount(e){
+    this.messageCount = e;
   }
 
 }

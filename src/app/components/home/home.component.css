@@ -1,0 +1,18 @@
+.home-card{
+  width: 25%;
+  margin-top: 10%;
+}
+
+.card-heading-text{
+  color:cornflowerblue;
+  padding-left: 25%;
+  text-shadow: 0.5px 0.5px darkblue;
+  font-size: 20px;
+}
+
+.card-value-text{
+  padding-left: 45%;
+  color:black;
+  text-shadow: 0.5px 0.5px blanchedalmond;
+  font-size: 15px;
+}

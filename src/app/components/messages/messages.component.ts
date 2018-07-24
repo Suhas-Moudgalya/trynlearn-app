@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import{ MessageService } from '../../services/message.service';
 import { Message } from '../../models/message';
 
@@ -9,12 +9,15 @@ import { Message } from '../../models/message';
 })
 export class MessagesComponent implements OnInit {
 
+  @Output() messageCount: EventEmitter<Number> = new EventEmitter<Number>();
+
   messageObject:Message[];
   constructor(private messageService : MessageService) { }
 
   ngOnInit() {
     this.messageService.getMessage().subscribe(message => {
       this.messageObject = message;
+      this.messageCount.emit(message.length);
   });
   }
 }
