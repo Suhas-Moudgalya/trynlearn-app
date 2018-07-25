@@ -2,8 +2,15 @@
 <p>Here You Can Try Something and Learn Something</p>
 
 <app-messages [hidden]="true" (messageCount)="updateMessageCount($event)"></app-messages>
-<mat-card class="home-card">
+<div class="row">
+<mat-card class="home-card-initial">
   <mat-card-content>
     <span class="card-heading-text">Total Messages</span><br/><span class="card-value-text">{{messageCount}}</span>
   </mat-card-content>
 </mat-card>
+<mat-card class="home-card-next">
+  <mat-card-content>
+    <span class="card-heading-text">Temparature</span><br/><span class="card-value-text">{{temparature}}</span>
+  </mat-card-content>
+</mat-card>
+</div>

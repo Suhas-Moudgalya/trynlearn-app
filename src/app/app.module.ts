@@ -16,6 +16,7 @@ import {MatDialogModule} from '@angular/material';
 import {MatCardModule} from '@angular/material';
 import {MatButtonModule} from '@angular/material';
 import { MatDialogRef } from '@angular/material';
+import {MatGridListModule} from '@angular/material/grid-list';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 
@@ -39,7 +40,8 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
     HttpClientModule,
     MatCardModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    MatGridListModule
   ],
   entryComponents: [MessageDialogComponent],
   providers: [],

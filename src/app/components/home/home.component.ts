@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {WeatherService} from '../../services/weather.service';
 
 @Component({
   selector: 'app-home',
@@ -8,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   messageCount: Number;
+  temparature: Number; 
 
-  constructor() { }
+  constructor(private weatherService: WeatherService ) { }
 
   ngOnInit() {
+     this.weatherService.getWeather().subscribe((weather)=>{
+      this.temparature = (weather.main.temp-273.15)* 1.8 + 32;
+    });
   }
 
   updateMessageCount(e){

@@ -1,6 +1,12 @@
-.home-card{
+.home-card-initial{
   width: 25%;
-  margin-top: 10%;
+  margin-top: 3%;
+}
+
+.home-card-next{
+  width: 25%;
+  margin-top: 3%;
+  margin-left: 3%;
 }
 
 .card-heading-text{
